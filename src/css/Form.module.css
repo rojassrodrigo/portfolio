@@ -1,0 +1,26 @@
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: #ff6961;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  .inputcontainer:hover .tooltip {
+    visibility: visible;
+  }
+  
+  .inputcontainer input:invalid + .tooltip {
+    visibility: visible;
+  }
+  
+  .inputcontainer input:valid + .tooltip {
+    visibility: hidden;
+  }
+  
